@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug swifty",
+            "program": "${workspaceFolder:swifty}/.build/debug/swifty",
+            "args": [],
+            "cwd": "${workspaceFolder:swifty}",
+            "preLaunchTask": "swift: Build Debug swifty"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release swifty",
+            "program": "${workspaceFolder:swifty}/.build/release/swifty",
+            "args": [],
+            "cwd": "${workspaceFolder:swifty}",
+            "preLaunchTask": "swift: Build Release swifty"
+        }
+    ]
+}
